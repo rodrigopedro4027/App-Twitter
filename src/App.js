@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import "./App.css"
 import firebase from "firebase"
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"
+import { FaSearch } from 'react-icons/fa';
 
 firebase.initializeApp({
   apiKey: "AIzaSyDLoqcbTDMFuurtAyDgVEKZ6qwo0j0Osjk",
@@ -37,9 +38,9 @@ class App extends Component {
         {this.state.isSignedIn ? (
           <span>
             <div className="nav">
-            <div>Guia de buscas do twitter</div>
+            <div className="pesquisar"><i>Pesquisar por #hashtags... </i><FaSearch size={20}/></div>
             <div className="btn" onClick={() => firebase.auth().signOut()}>Log out</div>
-            <h1>Seja bem-vindo(a) {firebase.auth().currentUser.displayName}</h1>
+            <h1>Seja bem-vindo(a) <br/>{firebase.auth().currentUser.displayName}</h1>
             <img
               alt="profile picture"
               src={firebase.auth().currentUser.photoURL}
