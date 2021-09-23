@@ -1,6 +1,7 @@
 .body{
   background-size: cover;
-  background-color: springgreen;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
 }
 
 .App {
@@ -42,7 +43,7 @@
 .App-intro {
   font-size: large;
 }
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 1066px){
   .App input{
     position: relative;
     display: inline;

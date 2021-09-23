@@ -52,9 +52,14 @@ class App extends Component {
               src={firebase.auth().currentUser.photoURL}
             />
             </div>
-            <h2 className="titulo2">Pesquisas recentes</h2>
+            <h2 className="titulo2">Dashboard de uso de hashtags</h2>
             <div className="as">
             </div>
+
+            <h2 className="titulo3">Hashtags salvas</h2>
+            <div className="as1">
+            </div>
+            
           </span>
           
         ) : (

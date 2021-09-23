@@ -50,24 +50,53 @@ img{
 }
 
 .as{
-  top: 300px;
+  top: 320px;
   background-color: #b1b1b1;
   display: block;
   text-align: center;
   height: 500px;
   width: 700px;
+  left: 100px;
   z-index: 3;
-  margin: auto;
   border-radius: 20px;
   position: relative;
   
 }
 
 .titulo2{
-  top: 300px;
-  position: relative;
+  display: inline-block;
+  font-weight: 100;
+  font-size: 18px;
+  top: 280px;
+  left: 40px;
+  position: absolute;
   color: #000000;
-  margin: auto;
+  margin: auto 90px;
+}
+
+.as1{
+  top: 320px;
+  background-color: #b1b1b1;
+  display: block;
+  text-align: center;
+  height: 500px;
+  width: 10%;
+  left: 900px;
+  z-index: 3;
+  border-radius: 20px;
+  position: absolute;
+  
+}
+
+.titulo3{
+  display: inline-block;
+  font-weight: 100;
+  font-size: 18px;
+  top: 280px;
+  left: 800px;
+  position: absolute;
+  color: #000000;
+  margin: auto 90px;
 }
 
 .btn{
@@ -88,9 +117,14 @@ img{
   top: 15px;
   font-weight: 700;
 }
-@media only screen and (max-width: 900px){
-  h1{
-    visibility: hidden;
+@media only screen and (max-width: 1066px){
+  .bemvindo{
+    color: #000000;
+    position: relative;
+    margin: auto;
+    top: 230px;
+    left: 0;
+
   }
   img{
     position: relative;
@@ -106,5 +140,35 @@ img{
   }
   .nav{
     height: 200px;
+  }
+  .as{
+    top: 500px;
+    width: 60%;
+    margin: auto;
+    left: 0;
+  }
+  .titulo2{
+    margin: auto -120px;
+    top: 450px;
+    left: auto;
+    right: auto;
+  }
+  .as1{
+    background-color: #b1b1b1;
+    display: block;
+    text-align: center;
+    top: 560px;
+    width: 60%;
+    left: 0;
+    z-index: 3;
+    margin: auto;
+    border-radius: 20px;
+    position: relative;
+  }
+  .titulo3{
+    top: 540px;
+    left: 0px;
+    position: relative;
+    margin: auto;
   }
 }
