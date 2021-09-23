@@ -5,8 +5,8 @@ import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"
 import { FaSearch } from 'react-icons/fa';
 
 firebase.initializeApp({
-  apiKey: "AIzaSyDLoqcbTDMFuurtAyDgVEKZ6qwo0j0Osjk",
-  authDomain: "fir-auth-tutorial-ed11f.firebaseapp.com"
+  apiKey: "AIzaSyBqbA5n12A37rilxcYAgbtZxqgF_cuAPYk",
+  authDomain: "projeto-1-484a9.firebaseapp.com"
 })
 
 class App extends Component {
@@ -15,7 +15,7 @@ class App extends Component {
     signInFlow: "popup",
     signInOptions: [
       firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-      firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+     // firebase.auth.FacebookAuthProvider.PROVIDER_ID,
       firebase.auth.TwitterAuthProvider.PROVIDER_ID,
       firebase.auth.GithubAuthProvider.PROVIDER_ID,
       firebase.auth.EmailAuthProvider.PROVIDER_ID
@@ -32,21 +32,31 @@ class App extends Component {
     })
   }
 
+
+
   render() {
+    let iconStyles = { color: "black", fontSize: "1.9em" , opacity: "0.3"};
     return (
       <div className="App">
         {this.state.isSignedIn ? (
           <span>
             <div className="nav">
-            <div className="pesquisar"><i>Pesquisar por #hashtags... </i><FaSearch size={20}/></div>
-            <div className="btn" onClick={() => firebase.auth().signOut()}>Log out</div>
-            <h1>Seja bem-vindo(a) <br/>{firebase.auth().currentUser.displayName}</h1>
+            <div className="pesquisar">
+              <input type="text" placeholder="Pesquisar por #hashtags..." />
+              <div className="icone" type="submit"><FaSearch size={20} style={iconStyles}/></div>
+            </div>
+            <div className="btn" onClick={() => firebase.auth().signOut()}>Sair</div>
+            <h1 className="bemvindo">Seja bem-vindo(a) <br/>{firebase.auth().currentUser.displayName}</h1>
             <img
               alt="profile picture"
               src={firebase.auth().currentUser.photoURL}
             />
             </div>
+            <h2 className="titulo2">Pesquisas recentes</h2>
+            <div className="as">
+            </div>
           </span>
+          
         ) : (
           <StyledFirebaseAuth
             uiConfig={this.uiConfig}
