@@ -288,7 +288,7 @@ b{
   }
   .as{
     top: 500px;
-    width: 60%;
+    width: 80%;
     margin: auto;
     left: 0;
   }
@@ -315,5 +315,26 @@ b{
     left: 0px;
     position: relative;
     margin: auto;
+  }
+  .tweet1{
+    width: 90%;
+  }
+  .t1{
+    width: 60%;
+    bottom: 14px;
+  }
+  .tweet2{
+    width: 90%;
+  }
+  .t2{
+    width: 60%;
+    bottom: 14px;
+  }
+  .tweet3{
+    width: 90%;
+  }
+  .t3{
+    width: 60%;
+    bottom: 14px;
   }
 }
