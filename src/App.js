@@ -52,8 +52,26 @@ class App extends Component {
               src={firebase.auth().currentUser.photoURL}
             />
             </div>
-            <h2 className="titulo2">Dashboard de uso de hashtags</h2>
+            <h2 className="titulo2">Hastags usadas no momento</h2>
             <div className="as">
+              <div className="tweet1">
+                <div className="perfil"></div>
+                <p className="s1"><b>Pessoa1</b><br/>@pessoa1</p>
+                
+                <p className="t1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+
+              <div className="tweet2">
+                <div className="perfil1"></div>
+                <p className="s2"><b>Pessoa2</b><br/>@pessoa2</p>
+                <p className="t2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+
+              <div className="tweet3">
+                <div className="perfil2"></div>
+                <p className="s3"><b>Pessoa3</b><br/>@pessoa3</p>
+                <p className="t3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
             </div>
 
             <h2 className="titulo3">Hashtags salvas</h2>

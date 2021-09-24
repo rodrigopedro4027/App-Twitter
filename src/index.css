@@ -49,17 +49,24 @@ img{
   bottom: 20px;
 }
 
+p{
+  color: #000;
+  position: relative;
+  width: 300px;
+}
+
 .as{
   top: 320px;
-  background-color: #b1b1b1;
+  background-image: linear-gradient(60deg,#ffffff,rgb(231, 231, 231) );
   display: block;
   text-align: center;
   height: 500px;
-  width: 700px;
+  width: 600px;
   left: 100px;
   z-index: 3;
   border-radius: 20px;
   position: relative;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   
 }
 
@@ -76,16 +83,16 @@ img{
 
 .as1{
   top: 320px;
-  background-color: #b1b1b1;
+  background-image: linear-gradient(60deg,#e9e9e9,rgb(255, 255, 255) );
   display: block;
   text-align: center;
   height: 500px;
   width: 10%;
-  left: 900px;
+  left: 800px;
   z-index: 3;
   border-radius: 20px;
   position: absolute;
-  
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .titulo3{
@@ -93,10 +100,148 @@ img{
   font-weight: 100;
   font-size: 18px;
   top: 280px;
-  left: 800px;
+  left: 700px;
   position: absolute;
   color: #000000;
   margin: auto 90px;
+}
+
+.tweet1{
+  position: absolute;
+  width: 550px;
+
+  height: 150px;
+  margin: 20px 20px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.perfil{
+  background-image: url(./esff-min.jpg);
+  background-position: left;
+  background-size: cover;
+  border: 1px solid #fff;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 50px;
+
+  height: 50px;
+  margin: 20px 20px;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.s1
+{
+  font-size: 13px;
+  margin: 25px 0px;
+  left: -30px;
+  line-height: 13px;
+}
+
+.t1
+{
+  width: 420px;
+  height: 50px;
+  margin: 0px 90px;
+  text-align: justify;
+  font-size: 12px;
+}
+
+.s2
+{
+  font-size: 13px;
+  margin: 25px 0px;
+  left: -30px;
+  line-height: 13px;
+}
+
+.tweet2
+{
+  top: 160px;
+  position: absolute;
+  width: 550px;
+
+  height: 150px;
+  margin: 20px 20px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.perfil1
+{
+  background-image: url(./portrait-of-satisfied-curly-haired-woman-raises-arm-shows-biceps-wears-pink-t-shirt-denim-shirt-necklace-adhesive-bandage-on-shoulder-after-vaccination-feels-good-and-protected-encourages-to-vaccinate.jpg);
+  background-position: left;
+  background-size: cover;
+  border: 1px solid #fff;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 50px;
+
+  height: 50px;
+  margin: 20px 20px;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.t2
+{
+  width: 420px;
+  height: 50px;
+  margin: 0px 90px;
+  text-align: justify;
+  font-size: 12px;
+}
+
+.s3
+{
+  font-size: 13px;
+  margin: 25px 0px;
+  left: -30px;
+  line-height: 13px;
+}
+
+.tweet3{
+  top: 320px;
+  position: absolute;
+  width: 550px;
+
+  height: 150px;
+  margin: 20px 20px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.perfil2{
+  background-image: url(./portrait-of-smiling-attractive-woman-posing-near-rough-wall.jpg);
+  background-position: left;
+  background-size: cover;
+  border: 1px solid #fff;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 50px;
+
+  height: 50px;
+  margin: 20px 20px;
+  border-radius: 50px;
+  z-index: 3;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.t3{
+  width: 420px;
+  height: 50px;
+  margin: 0px 90px;
+  text-align: justify;
+  font-size: 12px;
+}
+
+b{
+  font-size: 15px;
+  font-weight: 800;
 }
 
 .btn{
