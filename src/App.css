@@ -8,6 +8,9 @@
   text-align: center;
 }
 
+.firebaseui-container{
+  overflow: none !important;
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 10px;
@@ -43,6 +46,7 @@
 .App-intro {
   font-size: large;
 }
+
 @media only screen and (max-width: 1066px){
   .App input{
     position: relative;
@@ -50,7 +54,8 @@
     left: 0px;
     margin:15px;
     width: 50%;
-    padding: 10px 5px;
+    top: 20px;
+    padding: 15px 5px;
   }
 }
 @keyframes App-logo-spin {
